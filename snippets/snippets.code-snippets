@@ -1,0 +1,177 @@
+{
+  "Zod array nonempty": {
+    "prefix": ["zod_array_nonempty", "array nonempty"],
+    "scope": "javascript,typescript",
+    "body": "z.array(z.string()).nonempty()"
+  },
+  "Zod bigint positive": {
+    "prefix": ["zod_bigint_positive", "bigint positive"],
+    "scope": "javascript,typescript",
+    "body": "z.bigint().positive()"
+  },
+  "Zod date max": {
+    "prefix": ["zod_date_max", "date max"],
+    "scope": "javascript,typescript",
+    "body": "z.date().max(new Date())"
+  },
+  "Zod deepPartial": {
+    "prefix": ["zod_deep_partial", "deepPartial"],
+    "scope": "javascript,typescript",
+    "body": "const $1 = ${1:schema}.deepPartial();"
+  },
+  "Zod enum": {
+    "prefix": ["zod_enum", "zod enum"],
+    "scope": "javascript,typescript",
+    "body": "z.enum([${1:values}])"
+  },
+  "Zod schema keyof": {
+    "prefix": ["zod_schema_keyof", "schema keyof"],
+    "scope": "javascript,typescript",
+    "body": "const $1 = ${2:schema}.keyof();"
+  },
+  "Zod string nullable": {
+    "prefix": ["zod_string_nullable", "string nullable"],
+    "scope": "javascript,typescript",
+    "body": "z.nullable(z.string())"
+  },
+  "Zod number int positive": {
+    "prefix": ["zod_number_int_positive", "number int positive"],
+    "scope": "javascript,typescript",
+    "body": "z.number().int().positive()"
+  },
+  "Zod string optional": {
+    "prefix": ["zod_string_optional", "string optional"],
+    "scope": "javascript,typescript",
+    "body": "z.optional(z.string())"
+  },
+  "Zod schema partial": {
+    "prefix": ["zod_schema_partial", "schema partial"],
+    "scope": "javascript,typescript",
+    "body": "const $1 = ${2:schema}.partial();"
+  },
+  "Zod schema passthrough": {
+    "prefix": ["zod_schema_passthrough", "schema passthrough"],
+    "scope": "javascript,typescript",
+    "body": "${1:schema}.passthrough().parse()"
+  },
+  "Zod schema strip": {
+    "prefix": ["zod_schema_strip", "schema strip"],
+    "scope": "javascript,typescript",
+    "body": "${1:schema}.strip().parse()"
+  },
+  "Zod schema strict": {
+    "prefix": ["zod_schema_strict", "schema strict"],
+    "scope": "javascript,typescript",
+    "body": "${1:schema}.strict().parse()"
+  },
+  "Zod promise": {
+    "prefix": ["zod_promise", "zod promise"],
+    "scope": "javascript,typescript",
+    "body": "z.promise(z.string())"
+  },
+  "Zod function parameters": {
+    "prefix": ["zod_function_parameters", "function parameters"],
+    "scope": "javascript,typescript",
+    "body": "${1:function}.parameters()"
+  },
+  "Zod function returnType": {
+    "prefix": ["zod_function_returnType", "function returnType"],
+    "scope": "javascript,typescript",
+    "body": "${1:function}.returnType()"
+  },
+  "Zod string max": {
+    "prefix": ["zod_string_max", "string max"],
+    "scope": "javascript,typescript",
+    "body": "z.string().max(${1:maxLength})"
+  },
+  "Zod string min": {
+    "prefix": ["zod_string_min", "string min"],
+    "scope": "javascript,typescript",
+    "body": "z.string().min(${1:minLength})"
+  },
+  "Zod string length": {
+    "prefix": ["zod_string_length", "string length"],
+    "scope": "javascript,typescript",
+    "body": "z.string().length(${1:length})"
+  },
+  "Zod string email": {
+    "prefix": ["zod_string_email", "string email"],
+    "scope": "javascript,typescript",
+    "body": "z.string().email()"
+  },
+  "Zod string url": {
+    "prefix": ["zod_string_url", "string url"],
+    "scope": "javascript,typescript",
+    "body": "z.string().url().nullish()"
+  },
+  "Zod string emoji": {
+    "prefix": ["zod_string_emoji", "string emoji"],
+    "scope": "javascript,typescript",
+    "body": "z.string().emoji()"
+  },
+  "Zod string uuid": {
+    "prefix": ["zod_string_uuid", "string uuid"],
+    "scope": "javascript,typescript",
+    "body": "z.string().uuid()"
+  },
+  "Zod string cuid": {
+    "prefix": ["zod_string_cuid", "string cuid"],
+    "scope": "javascript,typescript",
+    "body": "z.string().cuid()"
+  },
+  "Zod string cuid2": {
+    "prefix": ["zod_string_cuid2", "string cuid2"],
+    "scope": "javascript,typescript",
+    "body": "z.string().cuid2()"
+  },
+  "Zod string ulid": {
+    "prefix": ["zod_string_ulid", "string ulid"],
+    "scope": "javascript,typescript",
+    "body": "z.string().ulid()"
+  },
+  "Zod string regex": {
+    "prefix": ["zod_string_regex", "string regex"],
+    "scope": "javascript,typescript",
+    "body": "z.string().regex(${1:regex})"
+  },
+  "Zod string includes": {
+    "prefix": ["zod_string_includes", "string includes"],
+    "scope": "javascript,typescript",
+    "body": "z.string().includes(${1:value})"
+  },
+  "Zod string startsWith": {
+    "prefix": ["zod_string_startsWith", "string startsWith"],
+    "scope": "javascript,typescript",
+    "body": "z.string().startsWith(${1:value})"
+  },
+  "Zod string endsWith": {
+    "prefix": ["zod_string_endsWith", "string endsWith"],
+    "scope": "javascript,typescript",
+    "body": "z.string().endsWith(${1:value})"
+  },
+  "Zod string datetime": {
+    "prefix": ["zod_string_datetime", "string datetime"],
+    "scope": "javascript,typescript",
+    "body": "z.string().datetime()"
+  },
+  "Zod string ip": {
+    "prefix": ["zod_string_ip", "string ip"],
+    "scope": "javascript,typescript",
+    "body": "z.string().ip({ version: '${1:v4|v6}' })"
+  },
+  "Zod string trim": {
+    "prefix": ["zod_string_trim", "zod string trim"],
+    "scope": "javascript,typescript",
+    "body": "z.string().trim()"
+  },
+  "Zod string toLowerCase": {
+    "prefix": ["zod_string_toLowerCase", "zod string toLowerCase"],
+    "scope": "javascript,typescript",
+    "body": "z.string().toLowerCase()"
+  },
+  "Zod string toUpperCase": {
+    "prefix": ["zod_string_toUpperCase", "zod string toUpperCase"],
+    "scope": "javascript,typescript",
+    "body": "z.string().toUpperCase()"
+  }
+}

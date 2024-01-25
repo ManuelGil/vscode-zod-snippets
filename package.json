@@ -1,0 +1,43 @@
+{
+  "name": "vscode-zod-snippets",
+  "displayName": "Zod Snippets",
+  "description": "This extension for Visual Studio Code adds snippets for Zod",
+  "version": "1.0.0",
+  "icon": "icon.jpg",
+  "license": "MIT",
+  "publisher": "imgildev",
+  "author": {
+    "name": "Manuel Gil",
+    "url": "https://github.com/ManuelGil"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/manuelgil"
+  },
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "zod",
+    "snippet",
+    "snippets",
+    "vscode"
+  ],
+  "homepage": "https://github.com/ManuelGil/vscode-zod-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManuelGil/vscode-zod-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/ManuelGil/vscode-zod-snippets/issues"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
