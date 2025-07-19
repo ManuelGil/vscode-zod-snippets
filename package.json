@@ -2,7 +2,7 @@
   "name": "vscode-zod-snippets",
   "displayName": "Zod Snippets",
   "description": "This extension for Visual Studio Code adds snippets for Zod",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "icon.jpg",
   "license": "MIT",
   "publisher": "imgildev",
